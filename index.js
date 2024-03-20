@@ -7,7 +7,6 @@ const config = require('./server/config/config.json'); // Assuming your config f
 const cors = require('cors');
 // Initialize Sequelize with your config object
 const sequelize = new Sequelize(config.development);
-console.log("//////////////////////////////////////////////")
 app.use(cors());
 app.use("/vehicle", vehicle);
 // Test the connection
